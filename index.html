@@ -18,11 +18,31 @@
             .start {
                 width: 100%;
                 height: 100%;
+                position: relative;
                 background: url(happy_birthday_c.jpg) no-repeat top center fixed; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
+                pointer-events: none;
+            }
+            .center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            h1 {
+                font-family: Arial;
+                color: white;
+                font-size: 3rem;
+            }
+            .iframe_con {
+                background: transparent;
+            }
+            .under {
+                z-index: -2;
             }
        </style>
     </head>
@@ -30,8 +50,15 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="start"></div>
-        <div class="fullscreen movie1"></div>
-        <div class="fullscreen movie2"></div>
+        <div class="start">
+        <div class="overlay">
+        <span class="center">
+            <h1>Ephemeral Erection Awards</h1>
+                <div class="iframe_con">
+                    <iframe src="http://free.timeanddate.com/countdown/i52d2s5b/n281/cf12/cm0/cu4/ct3/cs1/ca0/co0/cr0/ss0/cacfff/cpc000/pct/tcfff/fs300/szw320/szh135/iso2016-02-13T18:00:00" allowTransparency="true" frameborder="0" width="315" height="87" class="under"></iframe>
+                </div>
+        </span>
+        </div>
+        </div>      
     </body>
 </html>
