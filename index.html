@@ -3,28 +3,129 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Ephemeral Erection Awards 2016</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
        <style>
+        /*RESET*/
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /*END RESET*/
+
+            @font-face {
+                font-family: Brandon Headline;
+                src: url("Brandon_bld.otf") format("opentype");
+            }
+            @font-face {
+                font-family: Brandon Regular;
+                src: url("Brandon_med.otf") format("opentype");
+            }
+            @font-face {
+                font-family: Brandon Italic;
+                src: url("Brandon_med_it.otf") format("opentype");
+            }
+            @font-face {
+                font-family: Kurziv;
+                src: url("HoeflerText-Italic.ttf") format("truetype");
+            }
             html, body {
                 width: 100%;
                 height: 100%;
                 padding: 0;
                 margin: 0;
             }
-            .start {
+            h1 {
+                font-family: 'Brandon Headline', sans-serif;
+                color: white;
+                font-size: 6rem;
+                letter-spacing: 0.6rem;
+                padding-bottom: 1rem;
+            }
+            h2 {
+                font-family: 'Brandon Italic', sans-serif;
+                color: white;
+                font-size: 3rem;
+                letter-spacing: 0.2rem;
+                padding-bottom: 2rem; 
+                line-height: 3.5rem;
+            }
+            h3 {
+                font-family: 'Brandon Headline', sans-serif;
+                color: white;
+                font-size: 3rem;
+                letter-spacing: 0.6rem;
+                padding-bottom: 1rem;
+            }
+            h6 {
+                font-family: 'Kurziv', serif;
+                color: white;
+                font-size: 3rem;
+                padding-bottom: 0.8rem;
+            }
+            h5 {
+                font-family: 'Kurziv', serif;
+                color: white;
+                font-size: 2rem;
+                padding-bottom: 0.8rem;
+            }
+            p {
+                font-family: 'Brandon Regular', sans-serif;
+                color: white;
+                font-size: 1.3rem;
+                line-height: 1.8rem;
+                max-width: 40%;
+            }
+            .fullscreen {
                 width: 100%;
                 height: 100%;
                 position: relative;
-                background: url(happy_birthday_c.jpg) no-repeat top center fixed; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                pointer-events: none;
+            }
+            .start {
+                background: #eb5467;
             }
             .center {
                 position: absolute;
@@ -33,32 +134,416 @@
                 transform: translate(-50%, -50%);
                 text-align: center;
             }
-            h1 {
-                font-family: Arial;
+            .center_left {
+                padding-top: 40px;
+                padding-left: 40px;
+            }
+            .logo {
+                padding: 20px;
+            }
+            .push {
+                padding-top: 30px;
+            }
+            .download {
+                margin-top: 40px;
+            }
+            .download a {
+                font-family: 'Brandon Regular', sans-serif;
                 color: white;
-                font-size: 3rem;
+                font-size: 1.1rem;
+                line-height: 1.8rem;
+                text-decoration: none;
+                border: 2px solid #fff;
+                padding: 10px;
             }
-            .iframe_con {
-                background: transparent;
+            .download a:hover, .download a:focus {
+                background: #fff;
+                color: black;
             }
-            .under {
-                z-index: -2;
+            .again {
+                background: url(happy_birthday_c.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
             }
-       </style>
+            .fireworks {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .fireworks img:nth-child(2) {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            .about {
+                width: 100%;
+                height: auto;
+                min-height: 100%;
+                position: relative;
+                background: #ac92ec;
+                padding-bottom: 40px;
+
+            }
+            .movie1 {
+                background: url(seventh.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .movie2 {
+                background: url(withnail.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .show {
+                background: url(fargo.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .docu {
+                background: url(occupation.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .album {
+                background: #ec87c0;
+            }
+            .album img {
+                width: 300px;
+                height: 300px;
+                margin-bottom: 40px;
+                -webkit-box-shadow: 0px 0px 20px 8px #fff;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+                -moz-box-shadow:    0px 0px 20px 8px #fff;  /* Firefox 3.5 - 3.6 */
+                box-shadow:         0px 0px 20px 8px #fff;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+            }
+            audio {
+                margin-top: 30px;
+            }
+            .classical {
+                background: url(classical.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .jazz {
+                background: url(jazz.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .rock {
+                background: url(rock.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .metal {
+                background: url(metal.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .book1 {
+                background: url(book1.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .book2 {
+                background: url(book2.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .final {
+                background: url(final.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                pointer-events: none;
+            }
+
+        /*Media queries*/
+        @media only screen and (max-width : 992px) {
+             h1 {
+                font-family: 'Brandon Headline', sans-serif;
+                color: white;
+                font-size: 4.5rem;
+                letter-spacing: 0.6rem;
+                padding-bottom: 1rem;
+                padding-top: 0;
+            }
+            h2 {
+                font-family: 'Brandon Italic', sans-serif;
+                color: white;
+                font-size: 2.5rem;
+                letter-spacing: 0.2rem;
+                padding-bottom: 2rem; 
+                line-height: 3.5rem;
+            }
+            h3 {
+                font-family: 'Brandon Headline', sans-serif;
+                color: white;
+                font-size: 1.9rem;
+                letter-spacing: 0.6rem;
+                padding-bottom: 1rem;
+            }
+            h6 {
+                font-family: 'Kurziv', serif;
+                color: white;
+                font-size: 1.5rem;
+                padding-bottom: 0.8rem;
+            }
+            h5 {
+                font-family: 'Kurziv', serif;
+                color: white;
+                font-size: 2rem;
+                padding-bottom: 0.8rem;
+            }
+            p {
+                font-family: 'Brandon Regular', sans-serif;
+                color: white;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+                max-width: 80%;
+            }
+        }
+
+        @media only screen and (max-width : 768px) {
+            h1 {
+                font-family: 'Brandon Headline', sans-serif;
+                color: white;
+                font-size: 2rem;
+                letter-spacing: 0.6rem;
+                padding-bottom: 1rem;
+                padding-top: 0;
+            }
+            h2 {
+                font-family: 'Brandon Italic', sans-serif;
+                color: white;
+                font-size: 1.3rem;
+                letter-spacing: 0.2rem;
+                padding-bottom: 2rem; 
+                line-height: 2rem;
+            }
+            h3 {
+                font-family: 'Brandon Headline', sans-serif;
+                color: white;
+                font-size: 1.5rem;
+                letter-spacing: 0.6rem;
+                padding-bottom: 1rem;
+            }
+            h6 {
+                font-family: 'Kurziv', serif;
+                color: white;
+                font-size: 1.1rem;
+                padding-bottom: 0rem;
+            }
+            h5 {
+                font-family: 'Kurziv', serif;
+                color: white;
+                font-size: 1.2rem;
+                padding-bottom: 0.8rem;
+            }
+            p {
+                font-family: 'Brandon Regular', sans-serif;
+                color: white;
+                font-size: 1rem;
+                line-height: 1.4rem;
+                max-width: 80%;
+            }
+            .fullscreen {
+                width: 100%;
+                height: auto;
+                min-height: 100%;
+                position: relative;
+                padding-bottom: 40px;
+            }
+            .download a {
+                font-size: 0.8rem;
+            }
+            audio {
+                max-width: 100%;
+            }
+        }
+    }
+
+        /* END Media Queries */    
+        </style>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="start">
-        <div class="overlay">
-        <span class="center">
-            <h1>Ephemeral Erection Awards</h1>
-                <div class="iframe_con">
-                    <iframe src="http://free.timeanddate.com/countdown/i52d2s5b/n281/cf12/cm0/cu4/ct3/cs1/ca0/co0/cr0/ss0/cacfff/cpc000/pct/tcfff/fs300/szw320/szh135/iso2016-02-13T18:00:00" allowTransparency="true" frameborder="0" width="315" height="87" class="under"></iframe>
-                </div>
-        </span>
+        <div id="top" class="start fullscreen">
+            <header>
+                <nav>
+                    <div class="logo">
+                        <img src="logo.png" alt="Ephemeral Erection Awards">
+                    </div>
+                </nav>
+            </header>
+            <div class="center">
+                <h1>WELCOME</h1>
+                <h6>to the</h6>
+                <h2>1st Annual Ephemeral Erection Awards</h2>
+                <img src="kurac.png" alt="kurac">
+            </div>
         </div>
-        </div>      
+        <div class="again fullscreen">
+        <div class="fireworks"><img src="fireworks1.gif" alt="fireworks"><img src="fireworks1.gif" alt="fireworks"></div>
+            <div class="center">
+                <h1>CMON</h1>
+                <h2>Because you know you wanted to see it again</h2>
+            </div>
+        </div>
+        <div class="about">
+            <div class="center_left">
+                <h1>ABOUT</h1>
+                <p>Welcome one, and welcome all! I'm sure you're wondering what the hell is this? As I surely would be as well. These awards are envisioned as a summary of my whole year - at least arts-wise (pornographic masterpieces and paraphernalia excluded). And for someone who's actively building a repository of fine digital arts, that's a lot of material to sift through. Through many beautiful encounters and people I've met, I've grown to become less of a cynic and more of a sociopath. Surely a becoming sentiment for a higher being roaming this sordid mortal wastelands. But in all of my self-indulgent glorification, I managed to find time and share a lot of beautiful things with you (herpes anyone?), and each of those encounters left me being less of an asshole. So, I'm sure each of you will find bits of you here as well. I'm proud to have this network of weird, but highly interesting people stretching all the way from China to the moral abyss of the world called the USA. And if anything on this site ends up being enjoyable for you, it will make me a very happy, well endowed, demigod.</p>
+                <p><br></p>
+                <p>Love,<br>The One </p>
+                <p><br></p>
+                <p>Technical P.S. Everything on this site is uploaded from my personal library to a safe online storage and can be safely downloaded. When you click on a link to download, it will lead you to MEGA cloud storage. In the upper right hand corner you will have "Download as zip" button, just click it and let it download (if prompted - allow it to store files on your pc).</p>
+            </div> 
+        </div>  
+        <div class="movie1 fullscreen">
+            <div class="center_left">
+                <h3>BEST MOVIE</h3>
+                <h6>Heavy and/or pretentious</h6>
+                <h1 class="push">THE SEVENTH SEAL</h1>
+                <h5>Ingmar Bergman</h5>
+                <p class="push">When disillusioned Swedish knight Antonius Block returns home from the Crusades to find his country in the grips of the Black Death, he challenges Death to a chess match for his life. Tormented by the belief that God does not exist, Block sets off on a journey, meeting up with traveling players Jof and his wife, Mia, and becoming determined to evade Death long enough to commit one redemptive act while he still lives.</p>
+                <div class="download"><a href="https://mega.nz/#F!tAMEjQ5D!7oIuYO7IgSASmb85fG9dIQ" target="_blank">DOWNLOAD</a></div>
+            </div> 
+        </div>
+        <div class="movie2 fullscreen">
+            <div class="center_left">
+                <h3>BEST MOVIE</h3>
+                <h6>Not heavy and/or pretentious</h6>
+                <h1 class="push">WITHNAIL & I</h1>
+                <h5>Bruce Robinson</h5>
+                <p class="push">Two out-of-work actors -- the anxious, luckless Marwood and his acerbic, alcoholic friend, Withnail -- spend their days drifting between their squalid flat, the unemployment office and the pub. When they take a holiday "by mistake" at the country house of Withnail's flamboyantly gay uncle, Monty, they encounter the unpleasant side of the English countryside: tedium, terrifying locals and torrential rain.</p>
+                <div class="download"><a href="https://mega.nz/#F!VccEQChb!qOqUh4XVhGp3ts5A6_GfbA" target="_blank">DOWNLOAD</a></div>
+            </div> 
+        </div>
+        <div class="show fullscreen">
+            <div class="center_left">
+                <h3>BEST TV SHOW</h3>
+                <h1>FARGO</h1>
+                <h5>Season 2</h5>
+                <p class="push">The season is set in Luverne, Minnesota; Fargo, North Dakota; and Sioux Falls, South Dakota, in March 1979, and follows beautician Peggy Blumquist and her husband, butcher Ed Blumquist, as they cover up the hit-and-run and murder of Rye Gerhardt, son of Floyd Gerhardt, matriarch of the Gerhardt crime family in Fargo. Meanwhile, Lou Solverson, a Minnesota State Trooper who served as Swift-boat officer in Vietnam, and Rock County Sheriff Hank Larsson are investigating three murders committed by Rye Gerhardt. <br> *Season 1 is not a prerequisite for watching Season 2, basically unrelated plots.</p>
+                <div class="download"><a href="https://mega.nz/#F!Adtx0aaS!DzOzmMQJvYe2Rrxfd-bsNw" target="_blank">DOWNLOAD EP 1</a></div>
+            </div> 
+        </div>
+        <div class="docu fullscreen">
+            <div class="center_left">
+                <h3>BEST DOCUMENTARY</h3>
+                <h1>OCCUPATION 101</h1>
+                <h5>Abdallah and Sufyan Omeish</h5>
+                <p class="push">A thought-provoking and powerful documentary film on the current and historical root causes of the Israeli-Palestinian conflict. Unlike any other film ever produced on the conflict -- 'Occupation 101' presents a comprehensive analysis of the facts and hidden truths surrounding the never ending controversy and dispels many of its long-perceived myths and misconceptions.</p>
+                <div class="download"><a href="https://mega.nz/#F!tAc2waiK!hnxWEasP7u8fu14Ztp_UEA" target="_blank">DOWNLOAD</a></div>
+            </div> 
+        </div>
+        <div class="album fullscreen">
+            <div class="center">
+                <img src="cover.jpg" alt="Chalice of Love">
+                <h1>CHALICE OF LOVE</h1>
+                <h6>My 26th Birthday</h6>
+                <h2>This year's music compilations</h2>
+            </div>
+        </div>
+        <div class="classical fullscreen">
+            <div class="center_left">
+                <h3>BEST CLASSICAL SONG</h3>
+                <h1>ARMONICO TRIBUTO SONATA NO.2</h1>
+                <h5>Georg Muffat</h5>
+                <p class="push">This year predominantly Baroque with some romanticists and classicists.</p>
+                <audio controls="controls">
+                    Your browser does not support the <code>audio</code> element.
+                    <source src="classical.mp3" type='audio/mpeg; codecs="mp3"'>
+                </audio>
+                <div class="download"><a href="https://mega.nz/#F!gAdAWSrD!fKMIoam-xLwc9-skpqBzzw" target="_blank">DOWNLOAD CLASSICAL COMPILATION</a></div>
+            </div>
+        </div>
+        <div class="jazz fullscreen">
+            <div class="center_left">
+                <h3>BEST JAZZ SONG</h3>
+                <h1>THE GRID</h1>
+                <h5>Tigran Hamasyan</h5>
+                <p class="push">A lot of jazz fusion with apparent Middle-Eastern influences. A great mixture of a lot of styles.</p>
+                <audio controls="controls">
+                    Your browser does not support the <code>audio</code> element.
+                    <source src="jazz.mp3" type='audio/mpeg; codecs="mp3"'>
+                </audio>
+                <div class="download"><a href="https://mega.nz/#F!VRVxGJxD!H-1-aaCamVNligPe7-is_g" target="_blank">DOWNLOAD JAZZ COMPILATION</a></div>
+            </div>
+        </div>
+        <div class="rock fullscreen">
+            <div class="center_left">
+                <h3>BEST ROCK SONG</h3>
+                <h1>SPACE ODDITY</h1>
+                <h5>David Bowie</h5>
+                <p class="push">This year it's laid back and easy going. Somewhat sombre. R.I.P. Bowie</p>
+                <audio controls="controls">
+                    Your browser does not support the <code>audio</code> element.
+                    <source src="rock.mp3" type='audio/mpeg; codecs="mp3"'>
+                </audio>
+                <div class="download"><a href="https://mega.nz/#F!RVEHlYoS!YyHyrK8A1LFTiHZJmUzMgA" target="_blank">DOWNLOAD ROCK COMPILATION</a></div>
+            </div>
+        </div>
+        <div class="metal fullscreen">
+            <div class="center_left">
+                <h3>BEST METAL SONG</h3>
+                <h1>TREAD LIGHTLY</h1>
+                <h5>Mastodon</h5>
+                <p class="push">Very diverse, from instrumentals, to jazzy tunes, all the way to powerful simple beat metal songs. (No 15min instrumentals, I promise)</p>
+                <audio controls="controls">
+                    Your browser does not support the <code>audio</code> element.
+                    <source src="metal.mp3" type='audio/mpeg; codecs="mp3"'>
+                </audio>
+                <div class="download"><a href="https://mega.nz/#F!9NtXFQqD!D2MNTMo8z45fFLDYLh75Jg" target="_blank">DOWNLOAD METAL COMPILATION</a></div>
+            </div>
+        </div>
+        <div class="book1 fullscreen">
+            <div class="center_left">
+                <h3>BEST NON-FICTION BOOK</h3>
+                <h1>A SHORT HISTORY OF NEARLY EVERYTHING</h1>
+                <h5>Bill Bryson</h5>
+                <p class="push">From primordial nothingness to this very moment, A Short History of Nearly Everything reports what happened and how humans figured it out. To accomplish this daunting literary task, Bill Bryson uses hundreds of sources, from popular science books to interviews with luminaries in various fields. His aim is to help people like him, who rejected stale school textbooks and dry explanations, to appreciate how we have used science to understand the smallest particles and the unimaginably vast expanses of space.</p>
+                <div class="download"><a href="https://mega.nz/#!wEFlyRAY!VRE7RsW0O1GXmvQaHmiFZocu5tdqTgms19NI-WK7yVM" target="_blank">DOWNLOAD</a></div>
+            </div>
+        </div>
+        <div class="book2 fullscreen">
+            <div class="center_left">
+                <h3>BEST FICTION BOOK</h3>
+                <h1>THE ALEPH</h1>
+                <h5>Jorge Luis Borges</h5>
+                <p class="push">Full of philosophical puzzles and supernatural surprises, these stories contain some of Borges’s most fully realized human characters. With uncanny insight he takes us inside the minds of an unrepentant Nazi, an imprisoned Mayan priest, fanatical Christian theologians, a woman plotting vengeance on her father’s “killer,” and a man awaiting his assassin in a Buenos Aires guest house.</p>
+                <div class="download"><a href="https://mega.nz/#!BAVzTDyK!6JkGEuhKMeHq4_nm95hrH-o54QTTBTpiJQEWSaP-ZeU" target="_blank">DOWNLOAD</a></div>
+            </div>
+        </div>
+        <div class="final fullscreen">
+            <div class="center">
+                <h1>LOVE</h1>
+                <iframe src="http://free.timeanddate.com/countdown/i52eqiel/n281/cf12/cm0/cu4/ct0/cs1/ca0/co0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fs100/szw448/szh189/iso2017-02-12T00:00:00" allowTransparency="true" frameborder="0" width="171" height="40"></iframe>
+            </div>
+        </div>
     </body>
 </html>
