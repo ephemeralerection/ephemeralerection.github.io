@@ -1,0 +1,123 @@
+/**
+ *
+ * Helper Classes
+ *
+ */
+
+
+.hidden
+{
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden
+{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus
+{
+    position: static;
+
+    overflow: visible;
+    clip: auto;
+
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+.invisible
+{
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after
+{
+    display: table;
+
+    content: ' ';
+}
+
+.clearfix:after
+{
+    clear: both;
+}
+
+.clearfix
+{
+    *zoom: 1;
+}
+
+.fullscreen
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+.center
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    min-width: 80%; /* Usually 100% or nothing */
+    
+    max-width: 90%; /* Usually 100% or nothing */
+
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.fullscreen-overlay
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: auto;
+    min-height: 80%;
+}
+
+.movies-subpage .white h2,
+.movies-subpage .white h3,
+.tv-shows-subpage .white h2,
+.music-subpage .white h2,
+.books-subpage .white h2, 
+.other-subpage .white h2 {
+    color: #fff;
+}
+
+.movie-trigger,
+.tv-trigger,
+.music-trigger,
+.books-trigger,
+.other-trigger {
+    height: 100%;
+}
+

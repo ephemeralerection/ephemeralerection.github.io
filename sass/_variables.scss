@@ -1,0 +1,57 @@
+/**
+ *
+ * Variables and Mixins
+ *
+ */
+
+
+
+/*==============================
+=            Colors            =
+==============================*/
+
+
+$main-color: #eb5467;
+$movie-color: #ac92ec;
+$tv-color: #FFCD3A;
+$music-color: #00f2ff;
+$book-color: #003049;
+$other-color: #f53240;
+$text-color: #8c9190;
+$light-grey: #e5e6e8;
+$medium-grey: #b1b3b6;
+/*=====  End of Colors  ======*/
+
+
+
+/*==================================================
+=            Animations and transitions            =
+==================================================*/
+
+
+@mixin transition-05-ease
+{
+    -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}
+@mixin transition-025-ease
+{
+    -webkit-transition: all .25s ease-in-out;
+       -moz-transition: all .25s ease-in-out;
+        -ms-transition: all .25s ease-in-out;
+         -o-transition: all .25s ease-in-out;
+            transition: all .25s ease-in-out;
+}
+@mixin transition-015-ease
+{
+    -webkit-transition: all .15s ease-in-out;
+       -moz-transition: all .15s ease-in-out;
+        -ms-transition: all .15s ease-in-out;
+         -o-transition: all .15s ease-in-out;
+            transition: all .15s ease-in-out;
+}
+/*=====  End of Animations and transitions  ======*/
+

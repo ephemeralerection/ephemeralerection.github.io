@@ -1,0 +1,226 @@
+/**
+ *
+ * Media Queries
+ *
+ */
+
+/*===================================
+=            Medium size            =
+===================================*/
+
+@media (max-width: 1400px) {
+	html
+	{
+	    font-size: 0.8em;
+	}
+	.body-subpage article {
+		width: 80%;
+	}
+	article.end-navigation .end-navigation-description h2 {
+		font-size: 1.8rem;
+	}
+	.intro p {
+		width: 80%;
+		max-width: 600px;
+	}
+	.intro, .movies, .tv-shows, .music, .books, .other {
+		padding-bottom: 5rem;
+	}
+}
+
+
+/*=====  End of Medium size  ======*/
+
+
+/*==============================
+=            Tablet            =
+==============================*/
+
+@media (max-width: 1000px) and (min-height: 800px) {
+	.intro p {
+		margin: 0 auto;
+	}
+	.intro p, .movies p, .tv-shows p, .music p, .books p, .other p {
+		width: 80%;
+	}
+	ul > li:nth-child(1) a,
+	ul > li:nth-child(2) a,
+	ul > li:nth-child(3) a,
+	ul > li:nth-child(4) a,
+	ul > li:nth-child(5) a {
+		background-size: cover;
+	}
+	.intro, .movies, .tv-shows, .music, .books, .other {
+		padding-bottom: 5rem;
+	}
+}
+
+
+/*=====  End of Tablet  ======*/
+
+
+/*==============================
+=            Mobile            = 
+==============================*/
+
+@media (max-width: 599px) {
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
+	h4 {
+		font-size: 1.8rem;
+	}
+	.body-subpage h1 {
+		font-size: 4rem;
+	}
+	.body-subpage article > h2:first-child {
+		font-size: 4rem;
+		margin: -5rem 0 0 -1.5rem;
+	}
+	#music-landing h2 {
+		font-size: 3rem;
+	}
+	section {
+		margin-bottom: 0;
+	}
+	.body-padding {
+	    height: 100%;
+	    padding: 0px;
+	}
+	.intro p, .movies p, .tv-shows p, .music p, .books p, .other p {
+		width: 90%;
+	}
+	.intro, .movies, .tv-shows, .music, .books, .other {
+		padding-bottom: 5rem;
+	}
+	.body-subpage article {
+		position: relative;
+		width: 100%;
+		margin: 6rem auto;
+		padding: 1.5rem;
+		color: #8c9190;
+		background: #fff;
+	}
+	.music-subpage td {
+		padding: 1rem 0.5rem;
+	}
+	header
+	{
+	    right: 0;
+	    left: 0;
+	    height: 80px;
+	}
+	.nav-links
+	{	
+		top: 80px;
+		right: 0;
+		left: 0;
+		height: 100px;
+	}
+	header > nav a {
+		height: 100px;
+	}
+	ul > li:nth-child(1) a,
+	ul > li:nth-child(2) a,
+	ul > li:nth-child(3) a,
+	ul > li:nth-child(4) a,
+	ul > li:nth-child(5) a {
+		background-size: cover;
+	}
+	.anchor {
+		padding-top: 35px;
+	}
+	#nav-icon4 {
+		margin-right: 20px;
+		margin-top: 25px;
+	}
+	.logo {
+		margin-left: 20px;
+		margin-top: 28px;
+	}
+	#logo-link {
+		width: 70%;
+	}
+	.logo-clip
+	{
+	    -webkit-clip-path: circle(40px at 0 50%);
+	            clip-path: circle(40px at 0 50%);
+	}
+	.body-subpage .end-navigation {
+		margin: 6rem 0 0 0;
+		padding: 0;
+	}
+	#close {
+		right: 20px;
+		top: 20px;
+	}
+	.rating-labels
+	{
+
+	    float: left;
+
+	    width: 30%;
+	}
+	.rating-names
+	{
+	    float: left;
+
+	    width: 70%;
+	}
+	.rating-sites
+	{
+	    float: left;
+	    width: 60%;
+		margin-top: 2rem;
+	}
+	.rating-mark
+	{
+	    float: left;
+		margin-top: 1.3rem;
+	    width: 40%;
+	}
+	.ratings p
+	{
+	    font-size: 1.3rem;
+	    line-height: 1.7*1.3rem;
+	}
+	.subpage-header {
+		display: none;
+	}
+	article.end-navigation .previous, article.end-navigation .next {
+		padding: 2rem;
+		text-align: center;
+	}
+	.director {
+	    display: block;
+	    section {
+	        margin-bottom: 0;
+	    }
+	}
+	.director:not(:last-child) {
+	    margin-bottom: 2rem;
+	}
+	.director-left {
+	    width: 100%;
+	    height: 100%;
+	    min-height: 250px;
+
+	}
+	.director-right {
+	    padding: 2rem;
+	    width: 100%;
+	}
+
+}
+
+
+
+/*=====  End of Mobile  ======*/
+
+

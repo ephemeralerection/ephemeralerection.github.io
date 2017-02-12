@@ -1,0 +1,181 @@
+/**
+ *
+ * Typography
+ *
+ */
+
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900|Droid+Serif:400i,700i';
+
+/*============================================
+=            Variables and mixins            =
+============================================*/
+
+
+$sans: 'Source Sans Pro', sans-serif;
+$serif: 'Droid Serif', serif;
+
+@mixin main-headline {
+	font-family: $sans;
+	font-size: 6rem;
+	font-weight: 700;
+}
+/*=====  End of Variables and mixins  ======*/
+
+
+
+/*=============================================
+=            Main Typography Rules            =
+=============================================*/
+
+
+h1
+{
+    @include main-headline;
+}
+h2
+{
+    font-family: $sans;
+    font-size: 3rem;
+    font-weight: 700;
+}
+h3
+{
+    font-family: $serif;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+h4
+{
+    font-family: $serif;
+    font-size: 2.5rem;
+}
+p
+{
+    font-family: $sans;
+    font-size: 1.3rem;
+    line-height: 1.7*1.3rem;
+}
+.quotes p {
+    font-family: $serif;
+    padding-bottom: 1.7rem;
+}
+/*=====  End of Main Typography Rules  ======*/
+
+
+
+/*==============================================
+=            Other Typography Rules            =
+==============================================*/
+
+
+.anchor
+{
+    font-family: $sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    padding-top: 85px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+section a
+{
+    font-family: $sans;
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    display: block;
+    float: left;
+
+    margin: 1rem 1rem 0 0;
+    padding: 1rem 2.5rem;
+
+    color: #fff;
+    border: 2px solid #fff;
+    @include transition-015-ease;
+    &:hover,
+    &:focus
+    {
+        border: 2px solid $main-color;
+        background: $main-color;
+    }
+    &:active 
+    {
+        background: lighten($main-color, 10%);
+    }
+}
+.main-button a {
+    font-family: $sans;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+
+    display: block;
+    max-width: 25rem;
+
+    margin: 0 auto;
+    padding: 2rem 5rem;
+
+    color: #fff;
+    border: 2px solid $main-color;
+    background: $main-color;
+    @include transition-015-ease;
+    &:hover,
+    &:focus
+    {
+        background: lighten($main-color, 10%);
+    }
+    &:active 
+    {
+        background: darken($main-color, 10%);
+    }
+}
+.embed-container:after {
+    font-family: $sans;
+}
+section .subpage-headline a {
+    float: none;
+    max-width: 300px;
+    margin: 2rem auto 2rem auto;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.3rem;
+}
+.subpage-header {
+    h1,h2,h3,h4 {
+        padding: 0;
+        margin: 0;
+    }
+    h1 {
+        font-size: 3rem;
+        }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+.description p {
+    margin-bottom: 1.7*1.1rem;
+}
+.description p:last-child {
+    margin-bottom: 0;
+}
+
+.ratings p
+{
+    font-family: $sans;
+    font-size: 1.1rem;
+    line-height: 1.7*1.1rem;
+}
+.warning {
+    color: $main-color;
+    font-weight: 900;
+}
+/*=====  End of Other Typography Rules  ======*/
