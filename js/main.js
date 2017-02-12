@@ -35,6 +35,7 @@ $(function(){
 (function($) {
 
     $.fn.onPageLoad = function() {
+
         
         //Big menu classes toggle
         var navIcon = document.getElementById('nav-icon4');
@@ -124,9 +125,16 @@ $(function(){
               var target = $(this.hash);
               target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
               if (target.length) {
-                $('html, body').animate({
-                  scrollTop: target.offset().top-40
-                }, 1000);
+                if($(window).width() < 600){
+                  $('html, body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                }  
+                else {
+                  $('html, body').animate({
+                    scrollTop: target.offset().top-40
+                  }, 1000);
+                }
                 return false;
               }
             }
